@@ -10,7 +10,7 @@ st.set_page_config(page_title="EduPro Demand Dashboard", layout="wide")
 
 @st.cache_data
 def load_data():
-    file_path = r"C:\Users\riyan\Downloads\edu_pro_project\EduPro Online Platform.xlsx"
+    file_path = "EduPro Online Platform.xlsx"
     sheets = pd.read_excel(file_path, sheet_name=None, engine="openpyxl")
 
     users = sheets["Users"]
